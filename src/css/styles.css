@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+  width: 150px;
+}
+
+.statusColor {
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 5px;
+}
+
+.alive {
+  background-color: rgb(7, 247, 7);
+}
+
+.dead {
+  background-color: red;
+}
+
+.unknown {
+  background-color: lightgray;
+}
+
+.statusColor {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  box-shadow: #000000 1px 1px 5px;
+  margin: none;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  20%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+input {
+  padding: 10px 20px;
+  width: 20rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#container {
+  background-image: url(../../assets/img/FUNDO_2.jpg);
+  background-position: bottom right;
+  background-color: #252525;
+  background-size: 50rem;
+  background-repeat: no-repeat;
+  width: 100vw;
+  padding-top: 1rem;
+  padding-bottom: 30vh;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(120, 98%, 25%);
+  padding: 10px;
+  border-style: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: hsl(120, 98%, 80%);
+  cursor: not-allowed
+}
+
+footer {
+  background-color: hsl(120, 100%, 5%);
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  height: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  #container {
+      background-image: url(../../assets/img/FUNDO_2.jpg);
+      background-position: bottom right;
+      background-color: #252525;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 100vw;
+      padding-top: 1rem;
+      padding-bottom: 30vh;
+    }
+}
+
